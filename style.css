@@ -1,0 +1,250 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #000; /* Black */
+    color: #fff; /* White */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+}
+
+h1, h2 {
+    color: #333; /* Dark Gray */
+}
+
+/* Home Section */
+/* Homepage Styles */
+#home {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.animation-container {
+    text-align: center;
+}
+
+.animation-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    opacity: 0; /* Initially set to transparent */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply the fade-in animation */
+}
+
+.animation-container p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Floating Image Styles */
+.floating-image {
+    position:fixed;
+    left: 20px; /* Adjust the left position as needed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 999; /* Ensure the image is above other content */
+}
+
+.floating-image img {
+    max-width: 100%;
+    height: auto;
+    width: 150px; /* Adjust the width as needed */
+    border-radius: 50%; /* Create a circular shape */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+/* Homepage Styles */
+#home {
+    padding: 100px 0;
+    text-align: center;
+    position: relative; /* Position for the floating image */
+}
+
+.animation-container {
+    text-align: center;
+}
+
+.animation-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    opacity: 0; /* Initially set to transparent */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply the fade-in animation */
+}
+
+.animation-container p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Floating Image Styles */
+.floating-image {
+    position: absolute;
+    left: 20px; /* Adjust the left position as needed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 999; /* Ensure the image is above other content */
+    animation: floatUpDown 3s ease-in-out infinite; /* Floating animation */
+}
+
+.floating-image img {
+    max-width: 100%;
+    height: auto;
+    width: 150px; /* Adjust the width as needed */
+    border-radius: 50%; /* Create a circular shape */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+/* Keyframes for floating animation */
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the floating distance as needed */
+    }
+}
+
+
+/* Add any additional styling you want for the home section */
+
+/* New Services Section Styles */
+#services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Center-align the "Our Services" heading */
+#services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Flex container for services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual service (same styles as the existing section) */
+.services-container .service {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Service hover effect (same styles as the existing section) */
+.services-container .service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon (same styles as the existing section) */
+.services-container i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* Title (same styles as the existing section) */
+.services-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Description (same styles as the existing section) */
+.services-container p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* About Section Styles */
+#about {
+    padding: 100px 0;
+    background-color: #007BFF; /* Blue background color */
+    color: #fff; /* Text color (white) */
+    text-align: center; /* Position for the floating image */
+    height: 450px;
+}
+
+/* About content styling */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: -10px;
+}
+
+.about-content p {
+    font-size: 18px;
+}
+
+/* Floating image styling */
+.about-image img {
+    max-width: 100%;
+    height: 350px;
+    border-radius: 35px;
+    width: 250px;
+    animation: floatUpDown 6s ease-in-out infinite; /* Floating animation */
+    box-shadow: #000000 -2px 1px 1px 2px;
+}
+
+/* Keyframes for floating animation */
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the floating distance as needed */
+    }
+}
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* style.css */
+
